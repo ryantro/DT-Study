@@ -25,7 +25,7 @@ with nidaqmx.Task() as task:
                                          custom_scale_name='')
     
     task.timing.cfg_samp_clk_timing(1000, source="", active_edge=nidaqmx.constants.Edge.RISING, 
-                                    sample_mode=nidaqmx.constants.AcquisitionType.FINITE, samps_per_chan=1000)
+                                    sample_mode=nidaqmx.constants.AcquisitionType.FINITE, samps_per_chan=5)
     
     ts = time.time()
     
